@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44597D7E194C0697006E2046 /* BallTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44597D7C194C0697006E2046 /* BallTrail.sks */; };
+		44597D7F194C0697006E2046 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 44597D7D194C0697006E2046 /* spark.png */; };
+		44597D87194C2EEE006E2046 /* BallTrail2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44597D86194C2EEE006E2046 /* BallTrail2.sks */; };
+		44597D8B194C3A4B006E2046 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44597D8A194C3A4B006E2046 /* Images.xcassets */; };
 		44DBC700194BE5890067162C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBC6FF194BE5890067162C /* AppDelegate.swift */; };
 		44DBC702194BE5890067162C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 44DBC701194BE5890067162C /* GameScene.sks */; };
 		44DBC704194BE5890067162C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBC703194BE5890067162C /* GameScene.swift */; };
 		44DBC706194BE5890067162C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBC705194BE5890067162C /* GameViewController.swift */; };
 		44DBC709194BE5890067162C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44DBC707194BE5890067162C /* Main.storyboard */; };
-		44DBC70B194BE5890067162C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DBC70A194BE5890067162C /* Images.xcassets */; };
 		44DBC717194BE5890067162C /* PhysicsFieldsWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBC716194BE5890067162C /* PhysicsFieldsWorldTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44597D7C194C0697006E2046 /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail.sks; sourceTree = "<group>"; };
+		44597D7D194C0697006E2046 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		44597D86194C2EEE006E2046 /* BallTrail2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail2.sks; sourceTree = "<group>"; };
+		44597D8A194C3A4B006E2046 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		44DBC6FA194BE5890067162C /* PhysicsFieldsWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsFieldsWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DBC6FE194BE5890067162C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44DBC6FF194BE5890067162C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,10 +41,10 @@
 		44DBC703194BE5890067162C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		44DBC705194BE5890067162C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		44DBC708194BE5890067162C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		44DBC70A194BE5890067162C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		44DBC710194BE5890067162C /* PhysicsFieldsWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhysicsFieldsWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DBC715194BE5890067162C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44DBC716194BE5890067162C /* PhysicsFieldsWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsFieldsWorldTests.swift; sourceTree = "<group>"; };
+		44DBC720194BE8300067162C /* VortexShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VortexShader.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +86,17 @@
 		44DBC6FC194BE5890067162C /* PhysicsFieldsWorld */ = {
 			isa = PBXGroup;
 			children = (
+				44597D8A194C3A4B006E2046 /* Images.xcassets */,
+				44DBC720194BE8300067162C /* VortexShader.fsh */,
 				44DBC6FF194BE5890067162C /* AppDelegate.swift */,
 				44DBC701194BE5890067162C /* GameScene.sks */,
 				44DBC703194BE5890067162C /* GameScene.swift */,
 				44DBC705194BE5890067162C /* GameViewController.swift */,
 				44DBC707194BE5890067162C /* Main.storyboard */,
-				44DBC70A194BE5890067162C /* Images.xcassets */,
 				44DBC6FD194BE5890067162C /* Supporting Files */,
+				44597D7C194C0697006E2046 /* BallTrail.sks */,
+				44597D86194C2EEE006E2046 /* BallTrail2.sks */,
+				44597D7D194C0697006E2046 /* spark.png */,
 			);
 			path = PhysicsFieldsWorld;
 			sourceTree = "<group>";
@@ -195,9 +206,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44DBC70B194BE5890067162C /* Images.xcassets in Resources */,
+				44597D7F194C0697006E2046 /* spark.png in Resources */,
+				44597D87194C2EEE006E2046 /* BallTrail2.sks in Resources */,
 				44DBC702194BE5890067162C /* GameScene.sks in Resources */,
+				44597D8B194C3A4B006E2046 /* Images.xcassets in Resources */,
 				44DBC709194BE5890067162C /* Main.storyboard in Resources */,
+				44597D7E194C0697006E2046 /* BallTrail.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +419,7 @@
 				44DBC71C194BE5890067162C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44DBC71D194BE5890067162C /* Build configuration list for PBXNativeTarget "PhysicsFieldsWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +428,7 @@
 				44DBC71F194BE5890067162C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
