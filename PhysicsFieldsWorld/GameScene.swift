@@ -134,14 +134,28 @@ class GameScene: SKScene {
 
             
         case .NoiseField:
-            changeTagTo("LinearGravityFieldTag")
-            fieldType = FieldType.LinearGravityFieldDown
+            changeTagTo("DragFieldTag")
+            fieldType = FieldType.DragField
             
             let noiseField = childNodeWithName("NoiseField")
             noiseField.removeFromParent()
             
-            fieldNode.strength = 1
+            let dragField = SKFieldNode.dragField()
+            dragField.position = fieldCenter
+            dragField.region = SKRegion(radius: 50)
+            dragField.name = "DragField"
+            addChild(dragField)
+            
+            
+            
+        case .DragField:
+            changeTagTo("LinearGravityFieldTag")
+            fieldType = FieldType.LinearGravityFieldDown
 
+            let dragField = childNodeWithName("DragField")
+            dragField.removeFromParent()
+            
+            fieldNode.strength = 1
             
         case .MagneticField:
             fieldType = FieldType.ElectricField
